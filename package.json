@@ -1,0 +1,27 @@
+{
+  "name": "shift-left-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pckdou/shift-left-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pckdou/shift-left-testing/issues"
+  },
+  "homepage": "https://github.com/pckdou/shift-left-testing#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "jest": "^30.5.2"
+  }
+}

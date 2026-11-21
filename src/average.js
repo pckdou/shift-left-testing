@@ -1,9 +1,10 @@
-﻿function average(arr) {
-  if (arr.length === 0) return 0;
-  let total = 0;
-  for (let i = 0; i < arr.length; i++) {
-    total += arr[i];
+﻿const { sum } = require('./sum');
+
+function average(arr) {
+  if (!Array.isArray(arr)) {
+    throw new TypeError('배열만 입력할 수 있습니다');
   }
-  return total / arr.length;
+  if (arr.length === 0) return 0;
+  return sum(arr) / arr.length;
 }
 module.exports = { average };

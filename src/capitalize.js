@@ -1,5 +1,5 @@
 ﻿function capitalize(s) {
-  if (s === '') return '';
-  return s[0].toUpperCase() + s.slice(1);
+  if (typeof s !== 'string' || s.length === 0) return '';
+  return s.charAt(0).toUpperCase() + s.slice(1);
 }
 module.exports = { capitalize };

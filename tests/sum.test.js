@@ -7,4 +7,10 @@ describe('sum', () => {
   test('빈 배열은 0', () => {
     expect(sum([])).toBe(0);
   });
+  test('음수도 계산한다', () => {
+    expect(sum([-1, 1, -5])).toBe(-5);
+  });
+  test('배열이 아니면 에러', () => {
+    expect(() => sum('abc')).toThrow(TypeError);
+  });
 });

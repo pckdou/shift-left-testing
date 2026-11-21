@@ -1,8 +1,7 @@
 ﻿function sum(arr) {
-  let total = 0;
-  for (let i = 0; i < arr.length; i++) {
-    total += arr[i];
+  if (!Array.isArray(arr)) {
+    throw new TypeError('배열만 입력할 수 있습니다');
   }
-  return total;
+  return arr.reduce((total, n) => total + n, 0);
 }
 module.exports = { sum };

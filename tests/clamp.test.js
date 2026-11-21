@@ -10,4 +10,7 @@ describe('clamp', () => {
   test('최댓값보다 크면 최댓값', () => {
     expect(clamp(15, 0, 10)).toBe(10);
   });
+  test('min이 max보다 크면 에러', () => {
+    expect(() => clamp(5, 10, 0)).toThrow(RangeError);
+  });
 });
